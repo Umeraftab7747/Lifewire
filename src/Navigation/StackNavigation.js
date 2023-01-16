@@ -11,6 +11,7 @@ import ScreeenFour from "../Screens/ScreeenFour";
 import ScreenFive from "../Screens/ScreenFive";
 import ScreenSix from "../Screens/ScreenSix";
 import Screenseven from "../Screens/Screenseven";
+import ScreenEight from "../Screens/ScreenEight";
 
 const Stack = createNativeStackNavigator();
 
@@ -24,6 +25,7 @@ const StackNavigation = () => {
         <Stack.Screen name="ScreeenFour" component={ScreeenFour} />
         <Stack.Screen name="ScreenFive" component={ScreenFive} />
         <Stack.Screen name="Screenseven" component={Screenseven} />
+        <Stack.Screen name="ScreenEight" component={ScreenEight} />
         <Stack.Screen name="Splash" component={Splash} />
       </Stack.Navigator>
     </NavigationContainer>

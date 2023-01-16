@@ -33,7 +33,7 @@ const Screenseven = ({ navigation }) => {
       <AppButton
         text={"Continue"}
         onPress={() => {
-          navigation.navigate("ScreeenFour");
+          navigation.navigate("ScreenEight");
         }}
       />
     </View>
