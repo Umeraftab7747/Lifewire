@@ -6,7 +6,7 @@ import CartItem from "../Components/CartItem";
 import AppButton from "../Components/AppButton";
 import SettingItem from "../Components/SettingItem";
 
-const MainSetting = ({ navigation }) => {
+const GeneralScreen = () => {
   return (
     <View style={styles.MainSetting}>
       {/* Header */}
@@ -14,32 +14,12 @@ const MainSetting = ({ navigation }) => {
         <Text style={styles.cartContainer}>Settings</Text>
       </View>
       {/* Header */}
-
-      <View style={styles.space} />
-      <SettingItem
-        name={"General"}
-        img={require("../../assets/Images/icon1.png")}
-        onPress={() => {
-          navigation.navigate("GeneralScreen");
-        }}
-      />
-      <SettingItem
-        name={"Theme"}
-        img={require("../../assets/Images/icon2.png")}
-      />
-      <SettingItem
-        name={"Collection"}
-        img={require("../../assets/Images/icon3.png")}
-      />
-      <SettingItem
-        name={"Boost"}
-        img={require("../../assets/Images/icon4.png")}
-      />
+      <Text>GeneralScreen</Text>
     </View>
   );
 };
 
-export default MainSetting;
+export default GeneralScreen;
 
 const styles = StyleSheet.create({
   MainSetting: {
@@ -59,10 +39,5 @@ const styles = StyleSheet.create({
     color: "#fff",
     fontSize: h("3%"),
     fontWeight: "bold",
-  },
-  space: {
-    // backgroundColor: "red",
-    width: "100%",
-    height: h("4%"),
   },
 });
