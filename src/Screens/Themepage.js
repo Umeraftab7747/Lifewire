@@ -6,19 +6,19 @@ import CartItem from "../Components/CartItem";
 import AppButton from "../Components/AppButton";
 import SettingItem from "../Components/SettingItem";
 
-const GeneralScreen = () => {
+const Themepage = () => {
   return (
     <View style={styles.MainSetting}>
       {/* Header */}
       <View style={styles.headrContainer}>
-        <Text style={styles.cartContainer}>General</Text>
+        <Text style={styles.cartContainer}>Settings</Text>
       </View>
       {/* Header */}
     </View>
   );
 };
 
-export default GeneralScreen;
+export default Themepage;
 
 const styles = StyleSheet.create({
   MainSetting: {

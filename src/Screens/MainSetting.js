@@ -16,15 +16,21 @@ const MainSetting = ({ navigation }) => {
       {/* Header */}
 
       <View style={styles.space} />
-      <SettingItem
-        name={"General"}
+      {/* <SettingItem
+        name={"Manage Subscription"}
         img={require("../../assets/Images/icon1.png")}
         onPress={() => {
           navigation.navigate("GeneralScreen");
         }}
-      />
+      /> */}
+      <View style={styles.SupportText}>
+        <Text style={styles.MStext}>General Settings</Text>
+      </View>
       <SettingItem
         name={"Theme"}
+        onPress={() => {
+          navigation.navigate("Themepage");
+        }}
         img={require("../../assets/Images/icon2.png")}
       />
       <SettingItem
@@ -34,6 +40,22 @@ const MainSetting = ({ navigation }) => {
       <SettingItem
         name={"Boost"}
         img={require("../../assets/Images/icon4.png")}
+      />
+
+      <View style={styles.SupportText}>
+        <Text style={styles.MStext}>Support us</Text>
+      </View>
+      <SettingItem
+        name={"About us"}
+        img={require("../../assets/Images/icon7.png")}
+      />
+      <SettingItem
+        name={"FAQs"}
+        img={require("../../assets/Images/icon6.png")}
+      />
+      <SettingItem
+        name={"Privacy Policy"}
+        img={require("../../assets/Images/icon5.png")}
       />
     </View>
   );
@@ -64,5 +86,17 @@ const styles = StyleSheet.create({
     // backgroundColor: "red",
     width: "100%",
     height: h("4%"),
+  },
+  SupportText: {
+    // backgroundColor: "#0003",
+    width: "80%",
+    height: h("5%"),
+    justifyContent: "center",
+    marginTop: h("2%"),
+  },
+  MStext: {
+    color: "#0003",
+    fontSize: h("2%"),
+    fontWeight: "bold",
   },
 });
