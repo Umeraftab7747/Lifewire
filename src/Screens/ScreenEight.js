@@ -143,7 +143,7 @@ const ScreenEight = ({ navigation }) => {
             <AppButton
               text={"Continue"}
               onPress={() => {
-                navigation.navigate("ScreenSix");
+                navigation.navigate("Dashbord");
               }}
             />
           </View>

@@ -41,13 +41,14 @@ export default Screenthree;
 
 const styles = StyleSheet.create({
   MainContainer: {
-    flex: 1,
+    width: "100%",
+    height: "100%",
     // justifyContent: "center",
     alignItems: "center",
     backgroundColor: "white",
   },
   MainImg: {
-    // backgroundColor: "white",
+    // backgroundColor: "green",
     width: "100%",
     height: "100%",
     resizeMode: "cover",
@@ -56,7 +57,7 @@ const styles = StyleSheet.create({
   imgContainer: {
     // backgroundColor: "red",
     width: "100%",
-    height: h("40%"),
+    height: h("35%"),
   },
   Text1: {
     color: "#5A287F",

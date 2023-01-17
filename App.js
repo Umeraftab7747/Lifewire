@@ -1,12 +1,13 @@
+import { StyleSheet, Text, View, SafeAreaView } from "react-native";
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
-
 // screens
 import StackNavigation from "./src/Navigation/StackNavigation";
 
 export default function App() {
   return (
     <>
+      <SafeAreaView />
+      <StatusBar />
       <StackNavigation />
     </>
   );

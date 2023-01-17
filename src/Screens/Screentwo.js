@@ -7,28 +7,30 @@ import AppButton from "../Components/AppButton";
 
 const Screentwo = ({ navigation }) => {
   return (
-    <View style={styles.MainContainer}>
-      <View style={styles.imgContainer}>
-        <Image
-          style={styles.MainImg}
-          source={require("../../assets/Images/img2.png")}
+    <>
+      <View style={styles.MainContainer}>
+        <View style={styles.imgContainer}>
+          <Image
+            style={styles.MainImg}
+            source={require("../../assets/Images/img2.png")}
+          />
+        </View>
+        <Text style={styles.Text1}>Welcome!</Text>
+        <Text style={styles.Text2}>Let’s get you set up for success!</Text>
+        <Text style={styles.Text3}>
+          This system is designed to send out emails and text messages to users
+          who want to receive positive affirmations, encouragements and quotes
+          to help motivate themselves to acheive their goals
+        </Text>
+        <View style={styles.Space} />
+        <AppButton
+          text={"Get Started"}
+          onPress={() => {
+            navigation.navigate("Screenthree");
+          }}
         />
       </View>
-      <Text style={styles.Text1}>Welcome!</Text>
-      <Text style={styles.Text2}>Let’s get you set up for success!</Text>
-      <Text style={styles.Text3}>
-        This system is designed to send out emails and text messages to users
-        who want to receive positive affirmations, encouragements and quotes to
-        help motivate themselves to acheive their goals
-      </Text>
-      <View style={styles.Space} />
-      <AppButton
-        text={"Get Started"}
-        onPress={() => {
-          navigation.navigate("Screenthree");
-        }}
-      />
-    </View>
+    </>
   );
 };
 

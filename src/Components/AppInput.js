@@ -16,7 +16,7 @@ export default AppInput;
 const styles = StyleSheet.create({
   MainContainer: {
     width: "90%",
-    height: h("8%"),
+    height: h("7%"),
     marginTop: h("3%"),
   },
   InputContainer: {
@@ -24,7 +24,7 @@ const styles = StyleSheet.create({
     width: "100%",
     height: "90%",
     paddingLeft: h("1%"),
-    borderRadius: h("1%"),
+    borderRadius: h("0.5%"),
     fontSize: h("2%"),
   },
   Maintext: {
