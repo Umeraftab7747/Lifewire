@@ -5,7 +5,7 @@ import { w, h } from "react-native-responsiveness";
 import AppInput from "../Components/AppInput";
 import AppButton from "../Components/AppButton";
 
-const Profile = () => {
+const Profile = ({ navigation }) => {
   return (
     <View style={styles.MainContainer}>
       <View style={styles.headerCOntainer}></View>
@@ -22,7 +22,12 @@ const Profile = () => {
       <AppInput MainText={"Email"} Placeholder={"Your Email"} />
 
       <View style={styles.Sapce2} />
-      <AppButton text={"Settings"} />
+      <AppButton
+        text={"Settings"}
+        onPress={() => {
+          navigation.navigate("MainSetting");
+        }}
+      />
       <View style={styles.Sapce3} />
       <AppButton text={"Logout"} />
     </View>

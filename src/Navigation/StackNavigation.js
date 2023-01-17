@@ -18,6 +18,7 @@ import Dashbord from "../Screens/Dashbord";
 import ItemDetail from "../Screens/ItemDetail";
 import Cart from "../Screens/Cart";
 import Profile from "../Screens/Profile";
+import MainSetting from "../Screens/MainSetting";
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -79,6 +80,7 @@ const StackNavigation = () => {
         <Stack.Screen name="Screenseven" component={Screenseven} />
         <Stack.Screen name="ScreenEight" component={ScreenEight} />
         <Stack.Screen name="ItemDetail" component={ItemDetail} />
+        <Stack.Screen name="MainSetting" component={MainSetting} />
         <Stack.Screen name="Splash" component={Splash} />
       </Stack.Navigator>
     </NavigationContainer>
