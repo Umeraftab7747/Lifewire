@@ -25,6 +25,7 @@ import CollectionScreen from "../Screens/CollectionScreen";
 import BoostScreen from "../Screens/BoostScreen";
 import About from "../Screens/About";
 import PrivacyPolicy from "../Screens/PrivacyPolicy";
+import Faq from "../Screens/Faq";
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -93,6 +94,7 @@ const StackNavigation = () => {
         <Stack.Screen name="BoostScreen" component={BoostScreen} />
         <Stack.Screen name="About" component={About} />
         <Stack.Screen name="PrivacyPolicy" component={PrivacyPolicy} />
+        <Stack.Screen name="Faq" component={Faq} />
         <Stack.Screen name="Splash" component={Splash} />
       </Stack.Navigator>
     </NavigationContainer>

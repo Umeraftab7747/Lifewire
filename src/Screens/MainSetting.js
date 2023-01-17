@@ -60,7 +60,7 @@ const MainSetting = ({ navigation }) => {
       />
       <SettingItem
         onPress={() => {
-          navigation.navigate("BoostScreen");
+          navigation.navigate("Faq");
         }}
         name={"FAQs"}
         img={require("../../assets/Images/icon6.png")}
