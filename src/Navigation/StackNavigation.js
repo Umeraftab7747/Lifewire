@@ -21,6 +21,10 @@ import Profile from "../Screens/Profile";
 import MainSetting from "../Screens/MainSetting";
 import GeneralScreen from "../Screens/GeneralScreen";
 import Themepage from "../Screens/Themepage";
+import CollectionScreen from "../Screens/CollectionScreen";
+import BoostScreen from "../Screens/BoostScreen";
+import About from "../Screens/About";
+import PrivacyPolicy from "../Screens/PrivacyPolicy";
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -85,6 +89,10 @@ const StackNavigation = () => {
         <Stack.Screen name="MainSetting" component={MainSetting} />
         <Stack.Screen name="GeneralScreen" component={GeneralScreen} />
         <Stack.Screen name="Themepage" component={Themepage} />
+        <Stack.Screen name="CollectionScreen" component={CollectionScreen} />
+        <Stack.Screen name="BoostScreen" component={BoostScreen} />
+        <Stack.Screen name="About" component={About} />
+        <Stack.Screen name="PrivacyPolicy" component={PrivacyPolicy} />
         <Stack.Screen name="Splash" component={Splash} />
       </Stack.Navigator>
     </NavigationContainer>

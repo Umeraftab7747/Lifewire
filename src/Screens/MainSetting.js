@@ -35,9 +35,15 @@ const MainSetting = ({ navigation }) => {
       />
       <SettingItem
         name={"Collection"}
+        onPress={() => {
+          navigation.navigate("CollectionScreen");
+        }}
         img={require("../../assets/Images/icon3.png")}
       />
       <SettingItem
+        onPress={() => {
+          navigation.navigate("BoostScreen");
+        }}
         name={"Boost"}
         img={require("../../assets/Images/icon4.png")}
       />
@@ -46,14 +52,23 @@ const MainSetting = ({ navigation }) => {
         <Text style={styles.MStext}>Support us</Text>
       </View>
       <SettingItem
+        onPress={() => {
+          navigation.navigate("About");
+        }}
         name={"About us"}
         img={require("../../assets/Images/icon7.png")}
       />
       <SettingItem
+        onPress={() => {
+          navigation.navigate("BoostScreen");
+        }}
         name={"FAQs"}
         img={require("../../assets/Images/icon6.png")}
       />
       <SettingItem
+        onPress={() => {
+          navigation.navigate("PrivacyPolicy");
+        }}
         name={"Privacy Policy"}
         img={require("../../assets/Images/icon5.png")}
       />
